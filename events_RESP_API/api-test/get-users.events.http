@@ -1,0 +1,2 @@
+GET http://localhost:8080/my-events
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFydGpvbWJlcnppbkBnbWFpbC5jb20iLCJleHAiOjE3MzUyNjAwNDksInVzZXJJZCI6NH0.3tR_i-j3MGny5gkVv4C3lJf63xKqbvbrJ3K8kMcIHtI

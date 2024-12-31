@@ -1,0 +1,240 @@
+.main-container {
+  margin: 100px;
+  padding: 20px;
+}
+
+.center-element {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* Badge styles */
+.badge {
+  font-size: 15px !important;
+}
+
+/* Button styles */
+button i {
+  margin-right: 10px;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+  background-color: red !important;
+  pointer-events: all !important;
+  border-color: red !important;
+}
+
+/* Loader styles */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #008cff;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Event card styles */
+.event-list a {
+  color: black;
+  text-decoration: none;
+}
+
+/* .vignette-effect {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.vignette-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none;
+  z-index: 1;
+} */
+
+.filter-input {
+  position: fixed;
+}
+
+.event-list .card {
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-list .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.event-list .card:hover::after {
+  background: rgba(0, 0, 0, 0.568) !important;
+}
+
+/* Filter card styles */
+.event-list .card-filtered:hover::after {
+  cursor: default !important;
+  background: none !important;
+}
+
+.event-list .card:hover::after {
+  background: none;
+}
+
+.event-list .card-body {
+  /* background: linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgba(160, 160, 160, 0.7)
+  ); */
+  position: relative;
+  z-index: 2;
+}
+
+.event-list .overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.event-list .card:hover .overlay-text {
+  opacity: 1;
+}
+
+.event-list .card i {
+  margin-right: 10px;
+}
+
+.event-list .card-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.event-list .card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+/* Detailed event card styles */
+.card {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card-text i {
+  margin-right: 10px;
+}
+
+/* Navbar styles */
+.navbar-brand i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.login-element {
+  font-size: 1.1rem;
+}
+.login-element i {
+  margin-right: 5px;
+}
+.navbar {
+  box-shadow: 0 0px 5px 0px;
+}
+
+.navbar a {
+  margin-right: 25px;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 600 !important;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  left: 50%;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  left: 0;
+}
+
+.nav-link.active {
+  text-decoration: none;
+}
+
+/* Unauthorized and NotFound styles */
+.fallback {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fallback h1 {
+  font-weight: 600;
+}
+
+.fallback i {
+  font-size: 3rem;
+  color: rgb(167, 0, 0);
+  margin-bottom: 6px;
+}
+
+/* User Profiel styles */
+.user-profile {
+  position: fixed;
+}

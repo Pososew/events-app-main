@@ -1,0 +1,10 @@
+POST http://localhost:8080/events
+content-type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFydGpvbWJlcnppbkBnbWFpbC5jb20iLCJleHAiOjE3MzUyNjAwNDksInVzZXJJZCI6NH0.3tR_i-j3MGny5gkVv4C3lJf63xKqbvbrJ3K8kMcIHtI
+
+{
+    "title": "Event for TSI 1",
+    "description": "Individual project",
+    "location": "Riga-Latvia",
+    "dateTime": "2025-01-01T15:30:00.000Z"
+}

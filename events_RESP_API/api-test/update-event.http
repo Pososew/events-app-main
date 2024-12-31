@@ -1,0 +1,11 @@
+PUT http://localhost:8080/events/1
+content-type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFydGpvbWJlcnppbkBnbWFpbC5jb20iLCJleHAiOjE3MzUwNDM1NjAsInVzZXJJZCI6NH0.MX_WoH9f47_UbgK28UxQVG1e-KKZwFEkZle79_mJzpU
+
+{
+    "title": "Updated title",
+    "description": "Some update was here",
+    "location": "A new location",
+    "dateTime": "2025-02-02T16:45:00.000Z"
+
+}
